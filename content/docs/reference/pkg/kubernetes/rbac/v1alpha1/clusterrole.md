@@ -23,7 +23,7 @@ ClusterRole is a cluster level, logical grouping of PolicyRules that can be refe
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_kubernetes/rbac/v1alpha1/#pulumi_kubernetes.rbac/v1alpha1.ClusterRole">ClusterRole</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>aggregation_rule=None<span class="p">, </span>metadata=None<span class="p">, </span>rules=None<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_kubernetes/rbac/v1alpha1/#pulumi_kubernetes.rbac/v1alpha1.ClusterRole">ClusterRole</a></span><span class="p">(</span><span class="nx">resource_name</span><span class="p">:</span> <span class="nx">str</span><span class="p">, </span><span class="nx">opts</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/python/pulumi/#pulumi.ResourceOptions">Optional[ResourceOptions]</a></span> = None<span class="p">, </span><span class="nx">aggregation_rule</span><span class="p">:</span> <span class="nx">Optional[Dict[AggregationRule]]</span> = None<span class="p">, </span><span class="nx">metadata</span><span class="p">:</span> <span class="nx">Optional[Dict[ObjectMeta]]</span> = None<span class="p">, </span><span class="nx">rules</span><span class="p">:</span> <span class="nx">Optional[List[PolicyRule]]</span> = None<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
@@ -2321,8 +2321,8 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-optional"
             title="Optional">
-        <span id="non_resource_ur_ls_python">
-<a href="#non_resource_ur_ls_python" style="color: inherit; text-decoration: inherit;">non_<wbr>resource_<wbr>ur_<wbr>ls</a>
+        <span id="non_resource_urls_python">
+<a href="#non_resource_urls_python" style="color: inherit; text-decoration: inherit;">non_<wbr>resource_<wbr>urls</a>
 </span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>

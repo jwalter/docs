@@ -23,7 +23,7 @@ PodList is a list of Pods.
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_kubernetes/core/v1/#pulumi_kubernetes.core/v1.PodList">PodList</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>items=None<span class="p">, </span>metadata=None<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_kubernetes/core/v1/#pulumi_kubernetes.core/v1.PodList">PodList</a></span><span class="p">(</span><span class="nx">resource_name</span><span class="p">:</span> <span class="nx">str</span><span class="p">, </span><span class="nx">opts</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/python/pulumi/#pulumi.ResourceOptions">Optional[ResourceOptions]</a></span> = None<span class="p">, </span><span class="nx">items</span><span class="p">:</span> <span class="nx">Optional[List[Pod]]</span> = None<span class="p">, </span><span class="nx">metadata</span><span class="p">:</span> <span class="nx">Optional[Dict[ListMeta]]</span> = None<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
@@ -7293,8 +7293,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-optional"
             title="Optional">
-        <span id="target_ww_ns_python">
-<a href="#target_ww_ns_python" style="color: inherit; text-decoration: inherit;">target_<wbr>ww_<wbr>ns</a>
+        <span id="target_wwns_python">
+<a href="#target_wwns_python" style="color: inherit; text-decoration: inherit;">target_<wbr>wwns</a>
 </span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
@@ -16327,16 +16327,6 @@ More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-
 
     <dt class="property-optional"
             title="Optional">
-        <span id="pod_i_ps_python">
-<a href="#pod_i_ps_python" style="color: inherit; text-decoration: inherit;">pod_<wbr>i_<wbr>ps</a>
-</span> 
-        <span class="property-indicator"></span>
-        <span class="property-type"><a href="#podip">List[Pod<wbr>IP]</a></span>
-    </dt>
-    <dd>{{% md %}}podIPs holds the IP addresses allocated to the pod. If this field is specified, the 0th entry must match the podIP field. Pods may be allocated at most 1 value for each of IPv4 and IPv6. This list is empty if no IPs have been allocated yet.{{% /md %}}</dd>
-
-    <dt class="property-optional"
-            title="Optional">
         <span id="pod_ip_python">
 <a href="#pod_ip_python" style="color: inherit; text-decoration: inherit;">pod_<wbr>ip</a>
 </span> 
@@ -16344,6 +16334,16 @@ More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
     <dd>{{% md %}}IP address allocated to the pod. Routable at least within the cluster. Empty if not yet allocated.{{% /md %}}</dd>
+
+    <dt class="property-optional"
+            title="Optional">
+        <span id="pod_ips_python">
+<a href="#pod_ips_python" style="color: inherit; text-decoration: inherit;">pod_<wbr>ips</a>
+</span> 
+        <span class="property-indicator"></span>
+        <span class="property-type"><a href="#podip">List[Pod<wbr>IP]</a></span>
+    </dt>
+    <dd>{{% md %}}podIPs holds the IP addresses allocated to the pod. If this field is specified, the 0th entry must match the podIP field. Pods may be allocated at most 1 value for each of IPv4 and IPv6. This list is empty if no IPs have been allocated yet.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
